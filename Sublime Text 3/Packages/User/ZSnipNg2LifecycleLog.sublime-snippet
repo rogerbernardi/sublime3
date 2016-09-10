@@ -1,0 +1,74 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+import 
+  { 
+    Component, 
+    OnInit, 
+    OnChanges, 
+    DoCheck, 
+    AfterContentInit, 
+    AfterContentChecked, 
+    AfterViewInit, 
+    AfterViewChecked, 
+    OnDestroy 
+  } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: 'app-lifecycle',
+  template: `
+    <p>
+      lifecycle Works!
+    </p>
+  `,
+  styles: []
+})
+export class LifecycleComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+
+  constructor() { }
+
+  ngOnChanges() {
+    this.log('ngOnChanges Log');
+  }
+
+  ngOnInit() {
+    this.log('ngOnInit Log');
+  }
+
+  ngDoCheck() {
+    this.log('ngDoCheck Log');
+  }
+
+  ngAfterContentInit() {
+    this.log('ngAfterContentInit Log');
+  } 
+  
+  ngAfterContentChecked() {
+    this.log('ngAfterContentChecked Log');
+  } 
+
+  ngAfterViewInit() {
+    this.log('ngAfterViewInit Log');
+  } 
+  
+  ngAfterViewChecked() {
+    this.log('ngAfterViewChecked Log');
+  } 
+  
+  ngOnDestroy() {
+    this.log('ngOnDestroy Log');
+  }
+
+  private log(hook:string) {
+      console.log(hook);
+  }
+}
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ZSnipNg2LifecycleLog</tabTrigger>
+  <description>ZSnipNg2LifecycleLog</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ts, keyword.control.import.include.ts</scope>
+</snippet>

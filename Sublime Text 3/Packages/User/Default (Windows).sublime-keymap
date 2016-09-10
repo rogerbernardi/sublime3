@@ -1,0 +1,5 @@
+[
+	{ "keys": ["ctrl+shift+s"], "command": "auto_save" },
+	{ "keys": ["control+:"],"command": "toggle_comment", "args": {"block": false} }, 
+	{ "keys": ["shift+control+:"],"command": "toggle_comment", "args": {"block": true}}
+]

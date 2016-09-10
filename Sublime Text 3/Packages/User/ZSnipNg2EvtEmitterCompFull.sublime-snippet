@@ -1,0 +1,40 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+import { Component, EventEmitter, Output } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: 'app-evtbind',
+  template: `
+    <p>
+      evtbind Works!
+    </p>
+    <button (click)="onClicked()">Click onClicked</button>
+    <button (click)="onzClicked()">Click onzClicked</button>
+  `,
+  styles: [],
+  // PODE SER USADO inputs e outputs aqui, mas não é best pratices. 
+  // Se coloca o input e output aqui, não precisa colocar o import angular core.
+})
+export class EvtbindComponent {
+  @Output() clicked = new EventEmitter<string>();
+
+  onzClicked() {
+    this.clicked.emit ('It works from onzClicked EventEmitter!!!');
+
+  }
+
+  onClicked() {
+    alert ('It works!!!');
+  }
+
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>zsnip evt emitter component angular 2 full</tabTrigger>
+  <description>zsnip event emitter component angular2 full</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ts, keyword.control.import.include.ts</scope>
+</snippet>

@@ -1,0 +1,31 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"Angular Material Snippets",
+		"AngularJS",
+		"AngularJS Snippets",
+		"Bootstrap 3 Snippets",
+		"CodeFormatter",
+		"Color Highlighter",
+		"ColorPicker",
+		"Emmet",
+		"Google Search",
+		"Ionic Framework Extended Autocomplete",
+		"Ionic Framework Snippets",
+		"Ionic Snippets",
+		"Javascript Beautify",
+		"JavaScript Completions",
+		"JavaScriptFunctionDefinition",
+		"SideBarEnhancements",
+		"SnippetManager",
+		"SummitLinter",
+		"Terminal",
+		"TypeScript"
+	]
+}

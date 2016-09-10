@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai-Contrast (SL).tmTheme",
+	"ignored_packages":
+	[
+		"All Autocomplete",
+		"AngularJS",
+		"Bootstrap 3 Snippets",
+		"Color Highlighter",
+		"DocBlockr",
+		"Vintage"
+	]
+}
